@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+.text-white{
+    color: white;
+}
+.text-bold{
+    font-weight: bold;
+}
+.heroBackground{
+    width: 100vw;
+}
+.main{
+    position: relative;
+}
+.sub{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+.main-inline{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.main-card{
+    padding: 20px;
+}
+.spaces{
+    display: flex;
+    gap: 9px;
+    align-items: end;
+}
+.underline{
+    text-decoration: underline;
+}
+.navbar-btn{
+    display: flex;
+    gap: 10px;
+    align-items: end;
+}
+.bg{
+    background-color: white;
+border-bottom: 1px solid black;
+}
+.modal-content{
+    width: 50vw;
+}
+.text-mid{
+    text-align: center;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.batch{
+    background-color: gainsboro;
+    padding: 4px;
+    border-radius: 20px;
+}
