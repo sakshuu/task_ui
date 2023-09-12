@@ -209,13 +209,16 @@ const Posts = () => {
         </div>
         <div className="col-md-4 center">
 <div>
-                {/* <div> */}
-                <div className='center'>
 
-<input type="search" placeholder='|Enter your location' className='mt-4 mb-4' name="" id="" />
+                <div className='center'>
+                <div class="horizontal-line">
+                  <span className='icons-search'>
+                <i class="bi bi-geo-alt-fill"></i>
+                  </span>
+  <input type="text" id="name" name="name" class="input-field" placeholder="Enter your location"/>
+</div>
                 </div>
                 <div></div>
-                {/* </div> */}
 <p className='mt-2 mb-2'> <span><img src={Vector} width={16} alt="" /></span> Your location will help us serve better and extend a personalised experience.</p>
 
 <div className='center'>
