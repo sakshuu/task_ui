@@ -24,13 +24,12 @@ const MyNavbar = () => {
       </div>
     </nav>  */}
 
-<nav className="navbar navbar-expand-lg navbar-light bg-light">
+<nav className="navbar navbar-expand-lg navbar-light ">
       <div className="container">
         <a className="navbar-brand" href="#">
           <img src={icon} width={170} alt="" />
         </a>
 
-        {/* Toggle button for small screens */}
         <button
           className="navbar-toggler"
           type="button"
@@ -43,20 +42,19 @@ const MyNavbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <div className="input-group mt-3 mt-lg-0">
-            <span className="input-group-text" id="searchIcon">
-              <i className="bi bi-search"></i>
-            </span>
+        <div className="collapse navbar-collapse ms-auto" id="navbarNav">
+            <div className='inp navbar-nav ms-auto'>
             <input
               type="text"
-              className="form-control rounded"
+              className="rounded-inp"
               placeholder="Search for your favorite groups in ATG"
               aria-label="Search"
               aria-describedby="searchIcon"
-            />
+              />
+            <div> <i className="bi bi-search"></i></div>
+              
           </div>
-        </div>
+<div className="navbar-nav ms-auto">
 
         <div className="mt-3 mt-lg-0">
           <a
@@ -64,26 +62,48 @@ const MyNavbar = () => {
             href="#"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
-          >
-            Create an Account. It's Free
+            >
+            Create an Account. <span className='blue'>It's Free</span> 
           </a>
         </div>
-      </div>
+        </div>
+            </div>
+        </div>
     </nav>
+
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
+      
+<div className="row">
+  <div className="col-sm-12 col-md-12">
       <div class="modal-content">
-        <div class="modal-header">
-          <p class="modal-title" id="exampleModalLabel">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+            <span class="modal-title alert-font alert alert-success text-bold" id="exampleModalLabel" >
+              Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼
+            </span>
+      <div className='brn-end'>
+          <button type="button" class="btn-close btn-primary" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
         <div class="modal-body">
           <SignUp/>
         </div>
       </div>
     </div>
   </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
   </>
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import Background from "./../img/Background.png";
+import Posts from '../Components/Posts';
 
 const Home = () => {
   return <>
@@ -11,6 +12,7 @@ const Home = () => {
    <p className="text-white">142,765 Computer Engineers follow this</p>
    </div>
    </div>
+   <Posts/>
    
   </>
 }

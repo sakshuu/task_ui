@@ -1,74 +1,73 @@
 import React from 'react'
 import sign from "./../img/sign.png";
+import { Link } from 'react-router-dom';
+import Facebook from "./../img/Facebook.png"
+import Googl from "./../img/Googl.webp"
 
 const SignUp = () => {
   return <>
   <div className="row">
-    <div className="col-md-8">
+    <div className="col-md-6 signup">
+      <h3 className='text-bold mt-2 mb-4'>Create Account</h3>
+      <div className='p-2'>
 
-            <div class="card">
-              <h5 class="card-header text-mid">Signup</h5>
-              <div class="card-body">
-                <div>
-                  <label for="name" class="form-label">First name</label>
+
+                <div className='d-flex'>
                   <input
                     type="text"
-                    class="form-control"
+                    class="w-50 p-2 form-control py-2"
                     id="name"
-                    placeholder="Enter your name"
-                  />
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please choose a username.</div>
-                </div>
-                <div class="mt-2">
-                  <label for="email" class="form-label">First Email</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="email"
-                    placeholder="Enter Your Email"
-                  />
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please choose a username.</div>
-                </div>
-                <div class="mt-2">
-                  <label for="password" class="form-label">Password</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="password"
-                    placeholder="Enter Your Password"
+                    placeholder="First Name"
                     />
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please choose a password.</div>
-                </div>
-                <div class="mt-2">
-                  <label for="cpassword" class="form-label"
-                    >Confirm Password</label
-                  >
                   <input
                     type="text"
-                    class="form-control"
+                    class="w-50 p-2 form-control py-2"
+                    id="email"
+                    placeholder="Last Name"
+                    />
+                    </div>
+                  <input
+                    type="text"
+                    class="form-control py-2"
+                    id="password"
+                    placeholder="Email"
+                    />
+                 
+                  <input
+                    type="text"
+                    class="form-control py-2"
                     id="cpassword"
-                    placeholder="Confirm Your Password"
+                    placeholder="Password"
                   />
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">
-                    Please Recheck Your Password.
-                  </div>
+                  <input
+                    type="text"
+                    class="form-control py-2"
+                    id="cpassword"
+                    placeholder="Confirm Password"
+                  />
+      </div>
+                <button type="button" class="btn btn-primary btn-c w-100 mt-3">
+                Create Account
+                </button> 
+                <div className='mt-4 center gap-3'>
+                <img src={Facebook} width={30} alt="" /> <span>Sign up with Facebook</span> 
                 </div>
-                <button type="button" class="btn btn-primary w-100 mt-3">
-                  Signup
+                <div className='mt-4 center gap-3'>
+                <img src={Googl} width={40} alt="" /> <span>Sign up with Google</span> 
+                </div>
+
+                
+                <button type="button" class="btn btn-light w-100 mt-3">
+                
                 </button>
-                <p class="text-center mt-3">
-                  Already Have Account? <a href="#">Login</a>
-                </p>
-              </div>
-            </div>
+
   </div>
-            <div className="col-md-4 p-4">
-            <img src={sign} width={200} alt="" />
-            <p>By signing up, you agree to our Terms & conditions, Privacy policy</p>
+            <div className="col-md-6 signup-img">
+                <p class="text-center mt-3">
+                  Already Have Account? <Link to="/login">Login</Link>
+                </p>
+            <img src={sign} width={350} alt="" />
+            <p className='alert-fonts'>By signing up, you agree to our Terms & conditions, Privacy policy</p>
         </div>
                     </div>
   </>

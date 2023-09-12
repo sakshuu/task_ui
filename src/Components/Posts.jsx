@@ -10,8 +10,7 @@ import sarthak from "./../img/sarthak.png";
 import sarah from "./../img/sarah.png";
 import ronal from "./../img/ronal.png";
 import meetup from "./../img/meetup.png";
-
-
+import Vector from "./../img/Vector.png"
 
 
 const Posts = () => {
@@ -209,19 +208,19 @@ const Posts = () => {
             </div> */}
         </div>
         <div className="col-md-4 center">
-            <div className="">
-
-                <div>
+<div>
+                {/* <div> */}
                 <div className='center'>
 
 <input type="search" placeholder='|Enter your location' className='mt-4 mb-4' name="" id="" />
                 </div>
                 <div></div>
-                </div>
-<p className='mt-2 mb-2'>Your location will help us serve better and extend a personalised experience.</p>
+                {/* </div> */}
+<p className='mt-2 mb-2'> <span><img src={Vector} width={16} alt="" /></span> Your location will help us serve better and extend a personalised experience.</p>
 
-<h6 className='mt-4 mb-4'> <span><i class="bi bi-hand-thumbs-up"></i></span>  REcommended Groups</h6>
-
+<div className='center'>
+<h6 className='mt-4 mb-4'> <span><i class="bi bi-hand-thumbs-up p-3"></i></span>  REcommended Groups</h6>
+</div>
 
 <div className='main-inline'>
 <div className='spaces'>
