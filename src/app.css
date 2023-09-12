@@ -52,7 +52,7 @@
     border: 1px solid gainsboro;
     background-color: #F2F2F2;
     text-align: center;
-    width: 400px !important;
+    min-width: 400px !important;
     border-radius: 20px;
     padding: 4px;
 }
@@ -113,7 +113,11 @@ border-bottom: 1px solid black;
     }
 }
 
-
+.rounded-inp{
+    @media (max-Width:600px) {
+        min-width: 300px !important;   
+    }
+}
 .signup{
     @media  (max-Width:600px)  {
         display: block;
