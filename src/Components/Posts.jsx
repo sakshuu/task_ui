@@ -215,7 +215,10 @@ const Posts = () => {
                   <span className='icons-search'>
                 <i class="bi bi-geo-alt-fill"></i>
                   </span>
-  <input type="text" id="name" name="name" class="input-field" placeholder="Enter your location"/>
+  {/* <input type="text" id="name" name="name" class="input-field" placeholder="Noida India"/> */}
+  <div  className='location-para'>
+                  <p><i class="bi bi-geo-alt-fill">Noida India</i> <i class="bi bi-pencil"></i></p>
+                  </div>
 </div>
                 </div>
                 <div></div>

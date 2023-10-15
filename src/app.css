@@ -12,6 +12,9 @@
     background-size: cover !important;
     background-repeat: no-repeat !important;
  }
+ .location-para{
+    border-bottom: 1px solid black;
+  }
  .blue{
     color: blue;
  }
@@ -107,17 +110,20 @@ border-bottom: 1px solid black;
     border-radius: 20px;
 }
 .modal-content{
-
+    
     @media  (max-Width:600px)  {
         width: 80vw;
     }
 }
 
 .rounded-inp{
-    @media (max-Width:600px) {
-        min-width: 300px !important;   
+    @media (max-Width:320px) {
+        padding: 2px;
+        margin-top: 10px;
+        min-width: 100px !important;   
     }
 }
+
 .signup{
     @media  (max-Width:600px)  {
         display: block;
